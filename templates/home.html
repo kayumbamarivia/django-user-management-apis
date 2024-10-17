@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%block content%}
+<div>
+    {% for user in users %}
+    {% if user.email == "j88@gmail.com" %}
+    <h1>Hello, {{user.name}}</h1>
+    {% endif %}
+    {% endfor %}
+<form action="add" method="post">
+    {% csrf_token %}
+    NUM1: <input type="text" name="num1">
+    <br>
+    NUM2: <input type="text" name="num2">
+    <br>
+    <input type="submit">
+</form>
+</div>
+{%endblock%}

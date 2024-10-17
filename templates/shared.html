@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+    <title>JMV</title>
+</head>
+<body>  
+<header class="navbar">
+    <h1 class="logo">@J88</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="calc">CALC</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    {% block  content%}
+    {% endblock  %}
+</body>
+</html>
